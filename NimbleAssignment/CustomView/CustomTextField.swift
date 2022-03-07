@@ -14,14 +14,7 @@ class CustomTextField: UITextField {
     init(padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 10)) {
         self.padding = padding
         super.init(frame: .zero)
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
-        view.backgroundColor = .white
-        view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.18).cgColor
-        view.layer.cornerRadius = 12
-        self.addSubview(view)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        self.layer.cornerRadius = 12
+        self.setOverlay()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -68,5 +61,10 @@ class CustomTextField: UITextField {
         
         self.attributedPlaceholder = NSAttributedString(string: text, attributes:attributes)
         self.font = Font.regular.normal
+    }
+    
+    func setOverlay() {
+        self.layer.cornerRadius = 12
+        self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.18)
     }
 }

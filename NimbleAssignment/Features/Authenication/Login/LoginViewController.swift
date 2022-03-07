@@ -37,7 +37,16 @@ class LoginViewController: BaseViewController {
         let textField = CustomTextField(padding: UIEdgeInsets.init(top: 19, left: 12, bottom: 15, right: 12))
         textField.setPlaceHolder("Password")
         textField.delegate = self
+        textField.isSecureTextEntry = true
         return textField
+    }()
+    
+    lazy var loginButton: CustomButton = {
+        let button = CustomButton(frame: .zero)
+        button.setTitle("Log in", for: .normal)
+        button.titleLabel?.font = Font.bold.size(17)
+        button.completionBlock = onTapLoginButton
+        return button
     }()
     
     lazy var stackView: UIStackView = {
@@ -52,6 +61,7 @@ class LoginViewController: BaseViewController {
     override func setupView() {
         stackView.addArrangedSubview(emailTextField)
         stackView.addArrangedSubview(passwordTextField)
+        stackView.addArrangedSubview(loginButton)
         
         self.view.addSubview(backgroundImageView)
         self.view.addSubview(stackView)
@@ -60,16 +70,29 @@ class LoginViewController: BaseViewController {
     
     override func setupConstrain() {
         
-        backgroundImageView.snp.makeConstraints { (make) in
+        self.backgroundImageView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.height.equalTo(frameScreen.height)
             make.width.equalTo(frameScreen.width)
+        }
+        
+        self.emailTextField.snp.makeConstraints { make in
+            make.height.equalTo(56)
+        }
+        
+        self.passwordTextField.snp.makeConstraints { make in
+            make.height.equalTo(56)
         }
         
         self.stackView.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
             make.right.equalToSuperview().offset(-24)
             make.centerY.centerX.equalToSuperview()
+        }
+        
+        self.loginButton.snp.makeConstraints { make in
+            make.width.left.right.equalToSuperview()
+            make.height.equalTo(56)
         }
         
         self.logoImage.snp.makeConstraints { make in
@@ -79,6 +102,12 @@ class LoginViewController: BaseViewController {
             make.width.equalTo(168)
         }
     }
+    
+    func onTapLoginButton() {
+        let vc = HomePageViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {
