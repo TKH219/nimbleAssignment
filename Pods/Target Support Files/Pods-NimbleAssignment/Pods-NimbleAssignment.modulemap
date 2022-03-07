@@ -1,0 +1,6 @@
+framework module Pods_NimbleAssignment {
+  umbrella header "Pods-NimbleAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
