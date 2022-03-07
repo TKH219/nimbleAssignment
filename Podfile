@@ -8,4 +8,5 @@ target 'NimbleAssignment' do
   # Pods for NimbleAssignment
   pod 'SnapKit', '~> 5.0.0'
   pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire', '~> 5.5'
 end

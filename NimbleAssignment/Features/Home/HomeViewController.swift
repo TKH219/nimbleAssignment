@@ -42,8 +42,6 @@ class HomeViewController: BaseViewController {
     }()
     
     override func setupView() {
-        
-        titleLabel.font = Font.bold.size(28)
         descriptionLabel.font = Font.regular.size(17)
         self.view.addSubview(nextButton)
         self.view.addSubview(backgroundImageView)
