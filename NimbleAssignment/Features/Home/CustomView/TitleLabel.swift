@@ -16,8 +16,7 @@ class TitleLabel: UILabel {
     init(titleString: String = "") {
         super.init(frame: CGRect.zero)
         self.text = titleString
-        let font = Font.regular.size(29)
-        self.font = font
+        self.font = Font.bold.size(28)
         self.textColor = .white
         self.numberOfLines = 2
     }

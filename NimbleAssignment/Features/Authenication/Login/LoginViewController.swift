@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: BaseViewController {
     
+    var service = AuthenicationService()
+    
     lazy var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named:"login_background")
@@ -104,8 +106,20 @@ class LoginViewController: BaseViewController {
     }
     
     func onTapLoginButton() {
-        let vc = HomePageViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        service.requestLogin(email: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completion: { [weak self] response in
+            guard let strongSelf = self else { return }
+            print(response)
+            switch response {
+            case .success(let data):
+                UserDefaults.standard.set(data.data.attributes.accessToken, forKey: ACCESS_TOKEN)
+                UserDefaults.standard.set(data.data.attributes.refreshToken, forKey: REFRESH_TOKEN)
+                UserDefaults.standard.synchronize()
+                let vc = HomePageViewController()
+                strongSelf.navigationController?.pushViewController(vc, animated: true)
+            case .failure(let err):
+                print(err)
+            }
+        })
     }
     
 }

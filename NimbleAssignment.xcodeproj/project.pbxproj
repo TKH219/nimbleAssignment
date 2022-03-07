@@ -16,6 +16,17 @@
 		4E16437E27D32BCE006BF93B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437D27D32BCE006BF93B /* CustomTextField.swift */; };
 		4E16438027D5EE6B006BF93B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437F27D5EE6B006BF93B /* CustomButton.swift */; };
 		4E349B9127D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E349B9027D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf */; };
+		4E349B9327D607CE007902CF /* AlamofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349B9227D607CE007902CF /* AlamofireClient.swift */; };
+		4E349B9627D60963007902CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349B9527D60963007902CF /* Constants.swift */; };
+		4E349B9A27D61975007902CF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349B9927D61975007902CF /* LoginRequest.swift */; };
+		4E349B9C27D61AA5007902CF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349B9B27D61AA5007902CF /* BaseRequest.swift */; };
+		4E349B9F27D61D9C007902CF /* AuthenicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349B9E27D61D9C007902CF /* AuthenicationService.swift */; };
+		4E349BA127D61E5A007902CF /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BA027D61E5A007902CF /* LoginResponse.swift */; };
+		4E349BA327D61E70007902CF /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BA227D61E70007902CF /* BaseResponse.swift */; };
+		4E349BA627D66344007902CF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BA527D66344007902CF /* Result.swift */; };
+		4E349BA927D66365007902CF /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BA827D66365007902CF /* CustomError.swift */; };
+		4E349BAB27D663F3007902CF /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BAA27D663F3007902CF /* Encodable+Extension.swift */; };
+		4E349BAD27D66935007902CF /* LoginGrantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E349BAC27D66935007902CF /* LoginGrantType.swift */; };
 		4EAF253327D0C19A00BF93A2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253227D0C19A00BF93A2 /* SplashScreenViewController.swift */; };
 		4EAF253627D0C1C000BF93A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253527D0C1C000BF93A2 /* BaseViewController.swift */; };
 		4EAF253A27D0C26300BF93A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253927D0C26300BF93A2 /* UIColor+Extension.swift */; };
@@ -45,6 +56,17 @@
 		4E16437D27D32BCE006BF93B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4E16437F27D5EE6B006BF93B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4E349B9027D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neuzeit-S-LT-Std-bold.otf"; sourceTree = "<group>"; };
+		4E349B9227D607CE007902CF /* AlamofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireClient.swift; sourceTree = "<group>"; };
+		4E349B9527D60963007902CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E349B9927D61975007902CF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		4E349B9B27D61AA5007902CF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		4E349B9E27D61D9C007902CF /* AuthenicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenicationService.swift; sourceTree = "<group>"; };
+		4E349BA027D61E5A007902CF /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		4E349BA227D61E70007902CF /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		4E349BA527D66344007902CF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4E349BA827D66365007902CF /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		4E349BAA27D663F3007902CF /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		4E349BAC27D66935007902CF /* LoginGrantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGrantType.swift; sourceTree = "<group>"; };
 		4EAF253227D0C19A00BF93A2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4EAF253527D0C1C000BF93A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4EAF253927D0C26300BF93A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -112,9 +134,45 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4E349B9427D60958007902CF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4E349B9527D60963007902CF /* Constants.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		4E349B9827D61969007902CF /* Authenication */ = {
+			isa = PBXGroup;
+			children = (
+				4E349B9927D61975007902CF /* LoginRequest.swift */,
+				4E349BA027D61E5A007902CF /* LoginResponse.swift */,
+			);
+			path = Authenication;
+			sourceTree = "<group>";
+		};
+		4E349B9D27D61D7F007902CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E349B9E27D61D9C007902CF /* AuthenicationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4E349BA427D66335007902CF /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4E349BA527D66344007902CF /* Result.swift */,
+				4E349BA827D66365007902CF /* CustomError.swift */,
+				4E349BAC27D66935007902CF /* LoginGrantType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		4EAF253127D0C0C900BF93A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4E349B9827D61969007902CF /* Authenication */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				4EAF253527D0C1C000BF93A2 /* BaseViewController.swift */,
+				4E349B9227D607CE007902CF /* AlamofireClient.swift */,
+				4E349B9B27D61AA5007902CF /* BaseRequest.swift */,
+				4E349BA227D61E70007902CF /* BaseResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -130,6 +191,8 @@
 		4EAF253727D0C23F00BF93A2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4E349BA427D66335007902CF /* Enum */,
+				4E349B9427D60958007902CF /* Others */,
 				4EAF254827D0D65C00BF93A2 /* Components */,
 				4EAF253827D0C24500BF93A2 /* Extensions */,
 				4EAF254B27D0D7A000BF93A2 /* Commons.swift */,
@@ -144,6 +207,7 @@
 				4EAF253B27D0C2BA00BF93A2 /* UIViewController+Extension.swift */,
 				4E16436827D1D2BB006BF93B /* UIFont+Extension.swift */,
 				4E16436F27D1ED2D006BF93B /* Date+Extension.swift */,
+				4E349BAA27D663F3007902CF /* Encodable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,6 +285,7 @@
 		4EE5026927CF660500AE904B /* NimbleAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				4E349B9D27D61D7F007902CF /* Services */,
 				4E16437A27D325CA006BF93B /* Utils */,
 				4E16436527D1D267006BF93B /* Resource */,
 				4EAF254727D0D64100BF93A2 /* CustomView */,
@@ -381,18 +446,29 @@
 				4EAF254A27D0D67100BF93A2 /* RoundedButton.swift in Sources */,
 				4EAF253C27D0C2BA00BF93A2 /* UIViewController+Extension.swift in Sources */,
 				4E16437927D2295A006BF93B /* TitleLabel.swift in Sources */,
+				4E349B9C27D61AA5007902CF /* BaseRequest.swift in Sources */,
 				4EAF254627D0D58800BF93A2 /* HomePageViewController.swift in Sources */,
 				4EE5026F27CF660500AE904B /* ViewController.swift in Sources */,
 				4E16437027D1ED2D006BF93B /* Date+Extension.swift in Sources */,
+				4E349BA327D61E70007902CF /* BaseResponse.swift in Sources */,
+				4E349BAD27D66935007902CF /* LoginGrantType.swift in Sources */,
 				4EAF254427D0D50000BF93A2 /* HomeViewController.swift in Sources */,
 				4E16436927D1D2BB006BF93B /* UIFont+Extension.swift in Sources */,
 				4EAF253627D0C1C000BF93A2 /* BaseViewController.swift in Sources */,
+				4E349BA927D66365007902CF /* CustomError.swift in Sources */,
+				4E349BA627D66344007902CF /* Result.swift in Sources */,
+				4E349B9A27D61975007902CF /* LoginRequest.swift in Sources */,
+				4E349BAB27D663F3007902CF /* Encodable+Extension.swift in Sources */,
+				4E349BA127D61E5A007902CF /* LoginResponse.swift in Sources */,
 				4EE5026B27CF660500AE904B /* AppDelegate.swift in Sources */,
 				4EAF253327D0C19A00BF93A2 /* SplashScreenViewController.swift in Sources */,
 				4E16437C27D325D8006BF93B /* DateTimeUtils.swift in Sources */,
+				4E349B9627D60963007902CF /* Constants.swift in Sources */,
+				4E349B9327D607CE007902CF /* AlamofireClient.swift in Sources */,
 				4EAF254C27D0D7A000BF93A2 /* Commons.swift in Sources */,
 				4E16436C27D1D3A5006BF93B /* DescriptionLabel.swift in Sources */,
 				4EAF253A27D0C26300BF93A2 /* UIColor+Extension.swift in Sources */,
+				4E349B9F27D61D9C007902CF /* AuthenicationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
