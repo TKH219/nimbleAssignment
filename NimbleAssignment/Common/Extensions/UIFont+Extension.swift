@@ -8,7 +8,8 @@
 import UIKit
 
 enum Font: String {
-    case regular = "Neuzeit-S-LT-Std"
+    case regular = "NeuzeitSLTStd-Book"
+    case bold = "NeuzeitSLTStd-BookHeavy"
 }
 
 extension Font {

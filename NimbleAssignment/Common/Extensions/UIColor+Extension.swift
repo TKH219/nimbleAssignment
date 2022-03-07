@@ -34,6 +34,7 @@ extension UIColor {
 }
 
 extension UIColor {
+    static let black_151A = UIColor.HEXCOLOR(0x15151A)!
     static let appTheme = UIColor.HEXCOLOR(0xf0f0f0)!
     static let orange = UIColor.HEXCOLOR(0xffb248)!
     static let highlight = UIColor.HEXCOLOR(0x306ee9)!

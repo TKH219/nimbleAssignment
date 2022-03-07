@@ -14,6 +14,8 @@
 		4E16437927D2295A006BF93B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437827D2295A006BF93B /* TitleLabel.swift */; };
 		4E16437C27D325D8006BF93B /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437B27D325D8006BF93B /* DateTimeUtils.swift */; };
 		4E16437E27D32BCE006BF93B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437D27D32BCE006BF93B /* CustomTextField.swift */; };
+		4E16438027D5EE6B006BF93B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16437F27D5EE6B006BF93B /* CustomButton.swift */; };
+		4E349B9127D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E349B9027D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf */; };
 		4EAF253327D0C19A00BF93A2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253227D0C19A00BF93A2 /* SplashScreenViewController.swift */; };
 		4EAF253627D0C1C000BF93A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253527D0C1C000BF93A2 /* BaseViewController.swift */; };
 		4EAF253A27D0C26300BF93A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF253927D0C26300BF93A2 /* UIColor+Extension.swift */; };
@@ -41,6 +43,8 @@
 		4E16437827D2295A006BF93B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		4E16437B27D325D8006BF93B /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		4E16437D27D32BCE006BF93B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4E16437F27D5EE6B006BF93B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4E349B9027D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neuzeit-S-LT-Std-bold.otf"; sourceTree = "<group>"; };
 		4EAF253227D0C19A00BF93A2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4EAF253527D0C1C000BF93A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4EAF253927D0C26300BF93A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		4E16436627D1D26D006BF93B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4E349B9027D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf */,
 				4E16437627D212A9006BF93B /* Neuzeit-S-LT-Std.ttf */,
 			);
 			path = Fonts;
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				4E16437D27D32BCE006BF93B /* CustomTextField.swift */,
+				4E16437F27D5EE6B006BF93B /* CustomButton.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			files = (
 				4E16437727D212A9006BF93B /* Neuzeit-S-LT-Std.ttf in Resources */,
 				4EE5027727CF660800AE904B /* LaunchScreen.storyboard in Resources */,
+				4E349B9127D5FD96007902CF /* Neuzeit-S-LT-Std-bold.otf in Resources */,
 				4EE5027427CF660800AE904B /* Assets.xcassets in Resources */,
 				4EE5027227CF660500AE904B /* Main.storyboard in Resources */,
 			);
@@ -370,6 +377,7 @@
 			files = (
 				4E16437E27D32BCE006BF93B /* CustomTextField.swift in Sources */,
 				4EAF254127D0D15F00BF93A2 /* LoginViewController.swift in Sources */,
+				4E16438027D5EE6B006BF93B /* CustomButton.swift in Sources */,
 				4EAF254A27D0D67100BF93A2 /* RoundedButton.swift in Sources */,
 				4EAF253C27D0C2BA00BF93A2 /* UIViewController+Extension.swift in Sources */,
 				4E16437927D2295A006BF93B /* TitleLabel.swift in Sources */,
