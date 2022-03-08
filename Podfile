@@ -9,4 +9,6 @@ target 'NimbleAssignment' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'IQKeyboardManagerSwift'
   pod 'Alamofire', '~> 5.5'
+  pod 'MBProgressHUD', '~> 1.2'
+  pod 'Toast-Swift', '~> 5.0'
 end

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
-            let login = LoginViewController()
+            let login = HomePageViewController()
             let nav = UINavigationController(rootViewController: login)
             window.rootViewController = nav
             nav.navigationBar.isHidden = true

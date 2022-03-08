@@ -21,18 +21,8 @@ class HomeViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var logoImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named:"logo_hoozing")
-        imageView.clipsToBounds = false
-        imageView.contentMode = .scaleAspectFill
-        return imageView
-    }()
-    
-    
     lazy var titleLabel = TitleLabel()
     lazy var descriptionLabel = DescriptionLabel()
-    lazy var nextButton = RoundedButton(imageString: "circle_button")
     
     lazy var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
@@ -41,11 +31,7 @@ class HomeViewController: BaseViewController {
         return imageView
     }()
     
-    override func setupView() {
-        descriptionLabel.font = Font.regular.size(17)
-        self.view.addSubview(nextButton)
-        self.view.addSubview(backgroundImageView)
-        
+    func updateContent() {
         switch(self.step) {
         case Step.step1:
             backgroundImageView.image = UIImage(named:"home_screen_step_1")
@@ -60,18 +46,19 @@ class HomeViewController: BaseViewController {
             titleLabel.text = "Inclusion and belonging"
             descriptionLabel.text = "Building a workplace culture that prioritizes belonging and inclusio..."
         }
+    }
+    
+    override func setupView() {
+        titleLabel.textAlignment = .left
+        descriptionLabel.font = Font.regular.size(17)
+        updateContent()
         
+        self.view.addSubview(backgroundImageView)
         self.view.addSubview(titleLabel)
         self.view.addSubview(descriptionLabel)
     }
     
     override func setupConstrain() {
-        self.nextButton.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-54)
-            make.width.height.equalTo(56)
-            make.right.equalToSuperview().offset(-20)
-        }
-        
         backgroundImageView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.height.equalTo(frameScreen.height)
