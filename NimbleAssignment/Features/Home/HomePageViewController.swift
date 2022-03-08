@@ -140,7 +140,6 @@ class HomePageViewController : UIPageViewController {
         }
         
         pageControl.snp.makeConstraints{ (make) -> Void in
-//            make.left.equalToSuperview().offset(20)
             make.bottom.equalTo(nextButton.snp.top).offset(-96)
         }
     }
