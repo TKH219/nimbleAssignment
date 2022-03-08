@@ -27,3 +27,5 @@ let REFRESH_TOKEN = "REFRESH_TOKEN"
 
 let LOGIN_PATH = "api/v1/oauth/token"
 
+// MARK: DATE FORMAT
+let EEEE_MMMM_D = "EEEE, MMMM d"

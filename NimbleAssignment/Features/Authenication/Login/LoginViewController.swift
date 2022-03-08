@@ -106,9 +106,10 @@ class LoginViewController: BaseViewController {
     }
     
     func onTapLoginButton() {
+        self.showLoading(animated: true)
         service.requestLogin(email: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completion: { [weak self] response in
             guard let strongSelf = self else { return }
-            print(response)
+            strongSelf.hideLoadding(animated: true)
             switch response {
             case .success(let data):
                 UserDefaults.standard.set(data.data.attributes.accessToken, forKey: ACCESS_TOKEN)
@@ -117,7 +118,7 @@ class LoginViewController: BaseViewController {
                 let vc = HomePageViewController()
                 strongSelf.navigationController?.pushViewController(vc, animated: true)
             case .failure(let err):
-                print(err)
+                strongSelf.showToast(err.localizedDescription)
             }
         })
     }

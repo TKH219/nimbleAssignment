@@ -23,7 +23,6 @@ enum Step: CaseIterable {
             return 2
         }
     }
-    
 }
 
 class HomePageViewController : UIPageViewController {
@@ -61,10 +60,29 @@ class HomePageViewController : UIPageViewController {
         return pageControl
     }()
     
-    lazy var nextButton: UIButton = {
+    lazy var nextButton: RoundedButton = {
         let button = RoundedButton(imageString: "circle_button")
         button.addTarget(self, action: #selector(onTapNextButton), for: .touchUpInside)
         return button
+    }()
+    
+    lazy var profileButton: RoundedButton = {
+        let button = RoundedButton(imageString: "user_profile")
+        button.addTarget(self, action: #selector(onTapUserProfileButton), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var dateTimeTitle: TitleLabel = {
+        var titleString = Date().string(usingFormat: EEEE_MMMM_D).uppercased()
+        let label = TitleLabel(titleString: titleString)
+        label.font = Font.bold.size(13)
+        return label
+    }()
+    
+    lazy var todayTitle: TitleLabel = {
+        let label = TitleLabel(titleString: "Today")
+        label.font = Font.bold.size(34)
+        return label
     }()
     
     override func viewDidLoad() {
@@ -73,25 +91,13 @@ class HomePageViewController : UIPageViewController {
         self.setupPageController()
     }
     
-    fileprivate func setConstraints() {
-        nextButton.snp.makeConstraints { make in
-            make.width.height.equalTo(56)
-            make.right.equalToSuperview().offset(-20)
-            make.bottom.equalToSuperview().offset(-54)
-        }
-        
-        pageControl.snp.makeConstraints{ (make) -> Void in
-            make.top.equalTo(nextButton.snp.bottom).offset(10)
-        }
-    }
-    
-    private func setupPageController() {
+    func setupPageController() {
         self.pageController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.pageController?.dataSource = self
         self.pageController?.delegate = self
-        self.pageController?.view.frame = CGRect(x: 0,y: 0,width: self.view.frame.width,height: self.view.frame.height)
+        self.pageController?.view.frame = CGRect(x: 0,y: 0,width: frameScreen.width,height: frameScreen.height)
         self.addChild(self.pageController!)
         self.view.addSubview(self.pageController!.view)
         
@@ -99,14 +105,44 @@ class HomePageViewController : UIPageViewController {
         
         self.pageController?.setViewControllers([initialVC], direction: .forward, animated: true, completion: nil)
         
-//        self.view.addSubview(nextButton)
         self.view.addSubview(pageControl)
         self.view.addSubview(nextButton)
+        self.view.addSubview(dateTimeTitle)
+        self.view.addSubview(todayTitle)
+        self.view.addSubview(profileButton)
+        
         setConstraints()
         
         self.pageController?.didMove(toParent: self)
     }
     
+    func setConstraints() {
+        dateTimeTitle.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(60)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        todayTitle.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(20)
+            make.top.equalTo(dateTimeTitle.snp.bottom).offset(4)
+        }
+        
+        profileButton.snp.makeConstraints { make in
+            make.width.height.equalTo(36)
+            make.centerY.equalTo(todayTitle)
+            make.right.equalToSuperview().offset(-20)
+        }
+        
+        nextButton.snp.makeConstraints { make in
+            make.width.height.equalTo(56)
+            make.right.equalToSuperview().offset(-20)
+            make.bottom.equalToSuperview().offset(-54)
+        }
+        
+        pageControl.snp.makeConstraints{ (make) -> Void in
+            make.bottom.equalTo(nextButton.snp.top).offset(-96)
+        }
+    }
     
     @objc func onTapNextButton(sender: UIButton!) {
         
@@ -118,6 +154,10 @@ class HomePageViewController : UIPageViewController {
         
         let vc = HomeViewController(with: steps[self.currentIndex])
         self.pageController?.setViewControllers([vc], direction: .forward, animated: true, completion: nil)
+    }
+    
+    @objc func onTapUserProfileButton(sender: UIButton!) {
+        
     }
 }
 

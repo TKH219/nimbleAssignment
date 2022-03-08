@@ -1,24 +1,32 @@
 PODS:
   - Alamofire (5.5.0)
   - IQKeyboardManagerSwift (6.5.9)
+  - MBProgressHUD (1.2.0)
   - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - IQKeyboardManagerSwift
+  - MBProgressHUD (~> 1.2)
   - SnapKit (~> 5.0.0)
+  - Toast-Swift (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
+    - MBProgressHUD
     - SnapKit
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 66ee83055be2110f28b8dafe7c68449ae0d4b816
+PODFILE CHECKSUM: 800a7324c98dd11fb801626e9e6973b0d7f303dc
 
 COCOAPODS: 1.11.2
